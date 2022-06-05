@@ -1,16 +1,18 @@
-
-.contactButton {
-	color: #8856dd ;
-    padding: 15px 20px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: 10px;
-    border: 1px solid #8856dd ;
-    border-radius: 2px;
+div{
+    background-color: #8856dd;
+    padding: 10px;
+    font-family: 'Monospace';
+    p{
+        color: white;
+    }
+    h3{
+        color: white;
+    }
 }
 
-.contactButton:hover {
-	text-decoration: none;
-	color: #ffffff ;
-	background-color: #8856dd ;
+.button{
+    background-color:whitesmoke ;color: #8856dd;
+    padding: 10px;
+    margin: 10px;
 }
+
