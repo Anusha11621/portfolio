@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Anusha';
+
+  scrollTo(id:HTMLElement){
+
+    id.scrollIntoView({behavior:"smooth"})
+  }
 }
+

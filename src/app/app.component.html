@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
   <div class="container">
       <a class="navbar-brand" href="#">
           <b style="color: #8856dd;">ANUSHA</b>
@@ -8,20 +8,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto" >
-              <a class="nav-link active custom-nav-link" routerLink="/home">Home </a>
-              <a class="nav-link custom-nav-link" routerLink="/about">About</a>
-              <a class="nav-link custom-nav-link" routerLink="/education">Education</a>
-              <a class="nav-link custom-nav-link" routerLink="/skills">Skills</a>
-              <a class="nav-link custom-nav-link" routerLink="/project">Projects</a>
-              <a class="nav-link custom-nav-link" routerLink="/contact">Contact</a>
+              <a (click)="scrollTo(home)" class="nav-link active custom-nav-link">Home </a>
+              <a (click)="scrollTo(about)" class="nav-link custom-nav-link">About</a>
+              <a (click)="scrollTo(education)" class="nav-link custom-nav-link" >Education</a>
+              <a (click)="scrollTo(skills)" class="nav-link custom-nav-link">Skills</a>
+              <a (click)="scrollTo(projects)" class="nav-link custom-nav-link" >Projects</a>
+              <a (click)="scrollTo(contact)" class="nav-link custom-nav-link">Contact</a>
+              <a  href="./assets/Resume.pdf" target="_blank" class="btn ml-3" style="background-color:#8856dd ;color: whitesmoke; width:160px ;">
+                Download CV <i class="fa-solid fa-down-to-bracket"></i>
+            </a>
           </div>
       </div>
   </div>
 </nav>
-<router-outlet></router-outlet>
-<app-home></app-home>
-<app-about></app-about>
-<app-education></app-education>
-<app-skills></app-skills>
-<app-project></app-project>
-<app-contact></app-contact>
+<div #home><app-home ></app-home></div>
+<div #about><app-about></app-about></div>
+<div #education><app-education></app-education></div>
+<div #skills><app-skills></app-skills></div>
+<div #projects><app-project></app-project></div>
+<div #contact><app-contact></app-contact></div>

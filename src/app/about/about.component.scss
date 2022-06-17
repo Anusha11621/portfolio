@@ -1,7 +1,21 @@
-img{
-    border-radius: 15px;
-}
-div{
-    font-family: 'Monospace';
-    margin-bottom: 10px;
-}
+.sec-testimonials {
+    padding-top: 108px;
+    padding-bottom: 128px;
+    
+    color: #000000;
+  } 
+ footer{
+     color: #000000;
+ }  
+  .carousel-control-next,
+  .carousel-control-prev {
+    & {
+      color:#bc99f7;
+    }
+  
+    &:focus,
+    &:hover {
+      color: #bc99f7;
+    }
+  }
+  
